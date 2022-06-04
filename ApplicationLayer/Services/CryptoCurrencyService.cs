@@ -17,21 +17,26 @@ namespace ApplicationLayer.Services
         {
             _httpClient = new HttpClient();
         }
-        public async Task<ResponseModel<CoinModel>> GetTranding()
+        public async Task<Response<Coin>> GetTranding()
         {
             try
             {
                 var response = await _httpClient.GetStringAsync(_baseUrl + "search/trending");
 
-                if (String.IsNullOrEmpty(response)) return ResponseModel<CoinModel>.Error("Error Get trending");
+                if (String.IsNullOrEmpty(response)) return Response<Coin>.Error("Error Get trending");
 
-                return ResponseModel<CoinModel>.Success(JsonConvert.DeserializeObject<CoinModel>(response));
+                return Response<Coin>.Success(JsonConvert.DeserializeObject<Coin>(response));
             }
             catch (Exception)
             {
-                return ResponseModel<CoinModel>.Error("Error Get trending");
+                return Response<Coin>.Error("Error Get trending");
             }
         }
+        /*	Page with the ability to view detailed information about the currency:
+          price, volume, price change, in which markets it can be purchased and at what price(the ability to go to the currency page on the market is a plus). */
+        public async Task<Response> GetDetailed(string coinId)
+        {
 
+        }
     }
 }

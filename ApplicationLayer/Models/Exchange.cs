@@ -2,7 +2,7 @@
 
 namespace ApplicationLayer.Models
 {
-    public class ExchangeModel
+    public class Exchange
     {
         [JsonProperty("id")]
         public string Id { get; set; }

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ApplicationLayer.Models
 {
-    public class ItemModel
+    public class CoinItem
     {
         [JsonProperty("item")]
-        public CurrencyModel Item { get; set; }
+        public TrendingCurrency Item { get; set; }
     }
 }

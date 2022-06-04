@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace ApplicationLayer.Models
 {
-    public class CoinModel
+    public class Coin
     {
         [JsonProperty("coins")]
-        public List<ItemModel> Coins { get; set; }
+        public List<CoinItem> Coins { get; set; }
 
         [JsonProperty("exchanges")]
-        public List<ExchangeModel> Exchanges { get; set; }
+        public List<Exchange> Exchanges { get; set; }
     }
+}
