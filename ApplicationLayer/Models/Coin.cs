@@ -11,8 +11,5 @@ namespace ApplicationLayer.Models
     {
         [JsonProperty("coins")]
         public List<CoinItem> Coins { get; set; }
-
-        [JsonProperty("exchanges")]
-        public List<Exchange> Exchanges { get; set; }
     }
 }

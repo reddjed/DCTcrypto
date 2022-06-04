@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApplicationLayer.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,14 @@ namespace DCTcrypto
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CryptoCurrencyService service = new CryptoCurrencyService();
+            //var res = service.GetCoinById("bitcoin");
+            //var res = service.GetTranding();
+            var res = service.SearchCoins("btc");
         }
     }
 }

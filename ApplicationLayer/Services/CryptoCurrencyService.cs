@@ -23,20 +23,44 @@ namespace ApplicationLayer.Services
             {
                 var response = await _httpClient.GetStringAsync(_baseUrl + "search/trending");
 
-                if (String.IsNullOrEmpty(response)) return Response<Coin>.Error("Error Get trending");
+                var res = Response<Coin>.Success(JsonConvert.DeserializeObject<Coin>(response));
 
-                return Response<Coin>.Success(JsonConvert.DeserializeObject<Coin>(response));
+                return res;
             }
             catch (Exception)
             {
-                return Response<Coin>.Error("Error Get trending");
+                return Response<Coin>.Error("Error get trending");
             }
         }
-        /*	Page with the ability to view detailed information about the currency:
-          price, volume, price change, in which markets it can be purchased and at what price(the ability to go to the currency page on the market is a plus). */
-        public async Task<Response> GetDetailed(string coinId)
+        public async Task<Response<CurrencyById>> GetCoinById(string coinId)
         {
+            try
+            {
+                var response = await _httpClient.GetStringAsync(_baseUrl + "coins/" + coinId + "?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false&sparkline=false") ;
 
+                var res = Response<CurrencyById>.Success(JsonConvert.DeserializeObject<CurrencyById>(response));
+
+                return res;
+            }
+            catch (Exception)
+            {
+                return Response<CurrencyById>.Error("Error get coin by id");
+            }
+        }
+        public async Task<Response<SearchCoins>> SearchCoins(string query)
+        {
+            try
+            {
+                var response = await _httpClient.GetStringAsync(_baseUrl + "search?query=" + query);
+
+                var res = Response<SearchCoins>.Success(JsonConvert.DeserializeObject<SearchCoins>(response));
+
+                return res;
+            }
+            catch (Exception)
+            {
+                return Response<SearchCoins>.Error("Error searching by query");
+            }
         }
     }
 }

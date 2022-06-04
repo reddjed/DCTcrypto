@@ -1,4 +1,6 @@
-﻿namespace ApplicationLayer.Models
+﻿using Newtonsoft.Json;
+
+namespace ApplicationLayer.Models
 {
     public class Market
     {

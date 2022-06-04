@@ -8,7 +8,7 @@ namespace ApplicationLayer.Models
         public double Aed { get; set; }
 
         [JsonProperty("ars")]
-        public int Ars { get; set; }
+        public double Ars { get; set; }
 
         [JsonProperty("aud")]
         public double Aud { get; set; }
@@ -17,7 +17,7 @@ namespace ApplicationLayer.Models
         public double Bch { get; set; }
 
         [JsonProperty("bdt")]
-        public int Bdt { get; set; }
+        public double Bdt { get; set; }
 
         [JsonProperty("bhd")]
         public double Bhd { get; set; }
@@ -41,13 +41,13 @@ namespace ApplicationLayer.Models
         public double Chf { get; set; }
 
         [JsonProperty("clp")]
-        public int Clp { get; set; }
+        public double Clp { get; set; }
 
         [JsonProperty("cny")]
         public double Cny { get; set; }
 
         [JsonProperty("czk")]
-        public int Czk { get; set; }
+        public double Czk { get; set; }
 
         [JsonProperty("dkk")]
         public double Dkk { get; set; }
@@ -56,7 +56,7 @@ namespace ApplicationLayer.Models
         public double Dot { get; set; }
 
         [JsonProperty("eos")]
-        public int Eos { get; set; }
+        public double Eos { get; set; }
 
         [JsonProperty("eth")]
         public double Eth { get; set; }
@@ -71,43 +71,43 @@ namespace ApplicationLayer.Models
         public double Hkd { get; set; }
 
         [JsonProperty("huf")]
-        public int Huf { get; set; }
+        public double Huf { get; set; }
 
         [JsonProperty("idr")]
-        public int Idr { get; set; }
+        public double Idr { get; set; }
 
         [JsonProperty("ils")]
         public double Ils { get; set; }
 
         [JsonProperty("inr")]
-        public int Inr { get; set; }
+        public double Inr { get; set; }
 
         [JsonProperty("jpy")]
-        public int Jpy { get; set; }
+        public double Jpy { get; set; }
 
         [JsonProperty("krw")]
-        public int Krw { get; set; }
+        public double Krw { get; set; }
 
         [JsonProperty("kwd")]
         public double Kwd { get; set; }
 
         [JsonProperty("lkr")]
-        public int Lkr { get; set; }
+        public double Lkr { get; set; }
 
         [JsonProperty("ltc")]
         public double Ltc { get; set; }
 
         [JsonProperty("mmk")]
-        public int Mmk { get; set; }
+        public double Mmk { get; set; }
 
         [JsonProperty("mxn")]
-        public int Mxn { get; set; }
+        public double Mxn { get; set; }
 
         [JsonProperty("myr")]
         public double Myr { get; set; }
 
         [JsonProperty("ngn")]
-        public int Ngn { get; set; }
+        public double Ngn { get; set; }
 
         [JsonProperty("nok")]
         public double Nok { get; set; }
@@ -116,16 +116,16 @@ namespace ApplicationLayer.Models
         public double Nzd { get; set; }
 
         [JsonProperty("php")]
-        public int Php { get; set; }
+        public double Php { get; set; }
 
         [JsonProperty("pkr")]
-        public int Pkr { get; set; }
+        public double Pkr { get; set; }
 
         [JsonProperty("pln")]
         public double Pln { get; set; }
 
         [JsonProperty("rub")]
-        public int Rub { get; set; }
+        public double Rub { get; set; }
 
         [JsonProperty("sar")]
         public double Sar { get; set; }
@@ -137,16 +137,16 @@ namespace ApplicationLayer.Models
         public double Sgd { get; set; }
 
         [JsonProperty("thb")]
-        public int Thb { get; set; }
+        public double Thb { get; set; }
 
         [JsonProperty("try")]
-        public int Try { get; set; }
+        public double Try { get; set; }
 
         [JsonProperty("twd")]
-        public int Twd { get; set; }
+        public double Twd { get; set; }
 
         [JsonProperty("uah")]
-        public int Uah { get; set; }
+        public double Uah { get; set; }
 
         [JsonProperty("usd")]
         public double Usd { get; set; }
@@ -155,7 +155,7 @@ namespace ApplicationLayer.Models
         public double Vef { get; set; }
 
         [JsonProperty("vnd")]
-        public int Vnd { get; set; }
+        public double Vnd { get; set; }
 
         [JsonProperty("xag")]
         public double Xag { get; set; }
@@ -167,24 +167,24 @@ namespace ApplicationLayer.Models
         public double Xdr { get; set; }
 
         [JsonProperty("xlm")]
-        public int Xlm { get; set; }
+        public double Xlm { get; set; }
 
         [JsonProperty("xrp")]
-        public int Xrp { get; set; }
+        public double Xrp { get; set; }
 
         [JsonProperty("yfi")]
         public double Yfi { get; set; }
 
         [JsonProperty("zar")]
-        public int Zar { get; set; }
+        public double Zar { get; set; }
 
         [JsonProperty("bits")]
-        public int Bits { get; set; }
+        public double Bits { get; set; }
 
         [JsonProperty("link")]
         public double Link { get; set; }
 
         [JsonProperty("sats")]
-        public int Sats { get; set; }
+        public double Sats { get; set; }
     }
 }

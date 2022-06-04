@@ -11,6 +11,9 @@ namespace ApplicationLayer.Models
         [JsonProperty("total_volume")]
         public Currencies? TotalVolume { get; set; }
 
+        [JsonProperty("price_change_percentage_24h")]
+        public double? PriceChangePercentage24h { get; set; }
+
         [JsonProperty("price_change_percentage_7d")]
         public double? PriceChangePercentage7d { get; set; }
 
