@@ -17,7 +17,7 @@ namespace DCTcrypto
         {
             var startupView = new UI.Views.Startup();
             startupView.ShowDialog();
-
+            
             base.OnStartup(e);
         }
     }
