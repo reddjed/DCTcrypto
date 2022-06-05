@@ -13,5 +13,12 @@ namespace DCTcrypto
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            var startupView = new UI.Views.Startup();
+            startupView.ShowDialog();
+
+            base.OnStartup(e);
+        }
     }
 }

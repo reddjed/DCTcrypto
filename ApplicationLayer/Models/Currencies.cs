@@ -186,5 +186,10 @@ namespace ApplicationLayer.Models
 
         [JsonProperty("sats")]
         public double Sats { get; set; }
+
+        //public static object GetPropValue(object src, string propName)
+        //{
+        //    return src.GetType().GetProperty(propName).GetValue(src, null);
+        //}
     }
 }
