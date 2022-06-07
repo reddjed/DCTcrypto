@@ -6,6 +6,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/UI;component/Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/UI;component/Theme/SearchBoxTheme.xaml"/>
+                
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

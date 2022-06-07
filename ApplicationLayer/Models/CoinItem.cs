@@ -10,6 +10,6 @@ namespace ApplicationLayer.Models
     public class CoinItem
     {
         [JsonProperty("item")]
-        public TrendingCurrency Item { get; set; }
+        public TrendingCurrency? Item { get; set; }
     }
 }

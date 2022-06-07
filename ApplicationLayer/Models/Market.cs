@@ -5,10 +5,10 @@ namespace ApplicationLayer.Models
     public class Market
     {
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [JsonProperty("identifier")]
-        public string Identifier { get; set; }
+        public string? Identifier { get; set; }
 
         [JsonProperty("has_trading_incentive")]
         public bool HasTradingIncentive { get; set; }

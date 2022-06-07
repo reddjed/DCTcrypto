@@ -10,6 +10,6 @@ namespace ApplicationLayer.Models
     public class Coin
     {
         [JsonProperty("coins")]
-        public List<CoinItem> Coins { get; set; }
+        public List<CoinItem>? Coins { get; set; }
     }
 }
